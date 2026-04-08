@@ -1,0 +1,29 @@
+.preview {
+  grid-row: 4 / 5;
+}
+.preview__container-img {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.preview__img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  .preview {
+    grid-row: 4 / 5;
+  }
+  .preview__container-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

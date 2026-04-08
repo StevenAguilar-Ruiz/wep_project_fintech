@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}

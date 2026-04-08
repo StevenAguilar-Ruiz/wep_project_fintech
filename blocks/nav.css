@@ -1,0 +1,123 @@
+.nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  z-index: 1000;
+}
+.nav__container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+.nav__search {
+  position: relative;
+  width: 70%;
+  height: 40px;
+  display: flex;
+}
+.nav__input {
+  width: 100%;
+  height: 50%;
+  padding: 10px 45px 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.nav__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+}
+.nav__search-btn {
+  padding-left: 40x;
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+
+  min-width: 30px; /* 🔥 evita que flex lo estire */
+  min-height: 30px;
+
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0; /* 🔥 MUY IMPORTANTE */
+  flex: none; /* 🔥 evita deformación por flexbox */
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+}
+.nav__search-btn:active {
+  transform: scale(0.95);
+}
+.nav__search-icon {
+  width: 50%;
+  height: 50%;
+  fill: rgba(60, 60, 67, 0.25); /* gris tipo Apple */
+  stroke: none; /* elimina bordes */
+  transition: all 0.3s ease;
+}
+.nav__actions {
+  position: relative;
+  top: -50px;
+  left: 130%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  z-index: 1000;
+}
+.nav__home-btn {
+  padding-left: 40x;
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+
+  min-width: 30px; /* 🔥 evita que flex lo estire */
+  min-height: 30px;
+
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0; /* 🔥 MUY IMPORTANTE */
+  flex: none; /* 🔥 evita deformación por flexbox */
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+}
+.nav__home-btn:active {
+  transform: scale(0.95);
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+}

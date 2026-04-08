@@ -1,0 +1,61 @@
+.download-banner {
+  grid-row: 6 / 7;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: 30px;
+  margin-bottom: 70px;
+  background-image: url(/images/download-banner__img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+}
+.download-banner__content {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 360px repeat(1, 1fr);
+  grid-template-rows: 165px repeat(1, 1fr) 60px;
+  padding-left: 40px;
+  row-gap: 14px;
+}
+.download-banner__title {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-size: 33px;
+  line-height: 1;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: end;
+}
+.download-banner__button {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  font-family: "Inter-Black", Arial, Helvetica, sans-serif;
+  color: #000020;
+  font-size: 10px;
+  font-weight: 1px;
+  width: 90px;
+  height: 40px;
+  background-color: #d2fd9c;
+  border: none;
+}
+.download-banner__button:hover {
+  filter: brightness(70%);
+  box-shadow: 0 6px 12px #000020;
+  transform: translateY(px);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  .download-banner__title {
+    font-size: 28px;
+  }
+  .download-banner__button {
+    width: 85px;
+    height: 34px;
+  }
+}

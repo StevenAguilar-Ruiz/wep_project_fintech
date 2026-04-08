@@ -1,0 +1,99 @@
+.stats {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-rows: 50px 40px repeat(1, 1fr);
+  row-gap: 30px;
+}
+.stats__title {
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #394508;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats__subtitle {
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: #5d5d5d;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.stats__grid {
+  grid-row-start: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.stats__card-graph {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+}
+.stats__card-centralize {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+}
+.stats__card-double {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+}
+.stats__card-activity {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  .stats {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 38px 29px 463px;
+    row-gap: 30px;
+  }
+  .stats__title {
+    font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #394508;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1 / 2;
+  }
+  .stats__subtitle {
+    font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1;
+    color: #5d5d5d;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    grid-row: 2 / 3;
+  }
+  .stats__grid {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
