@@ -33,29 +33,53 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
-.stats__card-graph {
+.stats__container-graph {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2fd9c;
+}
+.stats__card-graph {
+  width: 330px;
+  height: 220px;
+}
+.stats__container-centralize {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2fd9c;
 }
 .stats__card-centralize {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  width: 100%;
-  height: 100%;
+  width: 330px;
+  height: 220px;
 }
-.stats__card-double {
+.stats__container-double {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2fd9c;
 }
-.stats__card-activity {
+.stats__card-double {
+  width: 330px;
+  height: 220px;
+}
+.stats__container-activity {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2fd9c;
+}
+.stats__card-activity {
+  width: 330px;
+  height: 220px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1279px) {
@@ -95,5 +119,25 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .stats__card-graph {
+    width: 240px;
+    height: 145px;
+  }
+
+  .stats__card-centralize {
+    width: 240px;
+    height: 145px;
+  }
+
+  .stats__card-double {
+    width: 240px;
+    height: 145px;
+  }
+
+  .stats__card-activity {
+    width: 240px;
+    height: 145px;
   }
 }

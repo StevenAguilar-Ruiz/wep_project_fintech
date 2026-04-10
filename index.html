@@ -14,7 +14,7 @@
   <body>
     <div class="page">
       <header class="nav">
-        <di class="nav__container">
+        <div class="nav__container">
           <div class="nav__search">
             <input type="text" class="nav__input" placeholder="Buscar..." />
             <button class="nav__search-btn">
@@ -25,7 +25,7 @@
               </svg>
             </button>
           </div>
-        </di>
+        </div>
         <div class="nav__actions">
           <button class="nav__home-btn">
             <svg viewBox="0 0 24 24" class="nav__search-icon">
@@ -59,21 +59,27 @@
             </div>
             <div class="header__offers">
               <p class="header__offers-text">Our offerings</p>
-              <img
-                class="header__image header__image-one"
-                src="images/image_one.png"
-                alt="InstantProductivity"
-              />
-              <img
-                class="header__image header__image-two"
-                src="images/Large nav buttons.png"
-                alt="ExpenseManagement"
-              />
-              <img
-                class="header__image header__image-tre"
-                src="images/Large nav buttons-2.png"
-                alt="AdvancedTechnology"
-              />
+              <div class="header-container__img-one">
+                <img
+                  class="header__image header__image-one"
+                  src="images/image_one.png"
+                  alt="InstantProductivity"
+                />
+              </div>
+              <div class="header-container__img-two">
+                <img
+                  class="header__image header__image-two"
+                  src="images/Large nav buttons.png"
+                  alt="ExpenseManagement"
+                />
+              </div>
+              <div class="header-container__img-three">
+                <img
+                  class="header__image header__image-three"
+                  src="images/Large nav buttons-2.png"
+                  alt="AdvancedTechnology"
+                />
+              </div>
             </div>
             <div class="header__contact">
               <nav class="header__nav">
@@ -91,7 +97,7 @@
         </section>
         <section class="content-wrapper">
           <div class="content">
-            <div class="features">
+            <section class="features">
               <img
                 class="features__image"
                 alt="imagen descriptiva de los usos del banco en linea"
@@ -123,8 +129,9 @@
                   src="images/features_redo.png"
                 />
               </div>
-            </div>
-            <div class="stats">
+            </section>
+
+            <section class="stats">
               <p class="stats__title">Get more done in a week</p>
               <p class="stats__subtitle">
                 Maximize your productivity with smarter tools designed to
@@ -132,29 +139,38 @@
                 your workflow to automate tasks, stay organized
               </p>
               <div class="stats__grid">
-                <img
-                  class="stats__card-graph"
-                  alt="Texto x2"
-                  src="images/stats__icon-graph.png"
-                />
-                <img
-                  class="stats__card-centralize"
-                  alt="Grafica de barras"
-                  src="images/stats__icon-centralize.png"
-                />
-                <img
-                  class="stats__card-double"
-                  alt="Icono circular de flechas"
-                  src="images/stats__icon-double.png"
-                />
-                <img
-                  class="stats__card-activity"
-                  alt="Texto 30%"
-                  src="images/stats__icon-activity.png"
-                />
+                <div class="stats__container-graph">
+                  <img
+                    class="stats__card-graph"
+                    alt="Texto x2"
+                    src="images/stats__icon-graph.png"
+                  />
+                </div>
+                <div class="stats__container-centralize">
+                  <img
+                    class="stats__card-centralize"
+                    alt="Grafica de barras"
+                    src="images/stats__icon-centralize.png"
+                  />
+                </div>
+                <div class="stats__container-double">
+                  <img
+                    class="stats__card-double"
+                    alt="Icono circular de flechas"
+                    src="images/stats__icon-double.png"
+                  />
+                </div>
+                <div class="stats__container-activity">
+                  <img
+                    class="stats__card-activity"
+                    alt="Texto 30%"
+                    src="images/stats__icon-activity.png"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="solutions">
+            </section>
+
+            <section class="solutions">
               <p class="solutions__title">The Most Reliable App</p>
               <div class="solutions__image-container">
                 <img
@@ -184,8 +200,9 @@
                   and restrict any type of spend.
                 </p>
               </div>
-            </div>
-            <div class="preview">
+            </section>
+
+            <section class="preview">
               <div class="preview__container-img">
                 <img
                   class="preview__img"
@@ -193,8 +210,9 @@
                   src="images/preview__img.jpg"
                 />
               </div>
-            </div>
-            <div class="software-features">
+            </section>
+
+            <section class="software-features">
               <h2 class="software-features__title">First class software</h2>
               <p class="software-features__description">
                 Get real-time insights, seamless transactions, and advanced
@@ -227,8 +245,9 @@
               <p class="software-features__text-two">Secure</p>
               <p class="software-features__text-tree">Earn Interest</p>
               <p class="software-features__text-four">Family Plans</p>
-            </div>
-            <div class="download-banner">
+            </section>
+
+            <section class="download-banner">
               <div class="download-banner__content">
                 <p class="download-banner__title">
                   Download Etran and <br />
@@ -237,7 +256,8 @@
                 </p>
                 <button class="download-banner__button">Get started</button>
               </div>
-            </div>
+            </section>
+
             <div class="contact-footer">
               <div class="contact-footer__brand">
                 <img
