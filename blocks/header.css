@@ -1,6 +1,6 @@
 .header__content {
   max-width: 100%;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: 40px;
   display: grid;
   grid-template-columns: 355px;
@@ -31,23 +31,96 @@
   margin: auto;
 }
 .header__button {
-  font-family: "Inter-Black", Arial, Helvetica, sans-serif;
-  color: #000020;
-  font-size: 10px;
-  font-weight: 1px;
-  width: 90px;
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+
+  width: 130px;
   height: 40px;
-  background-color: #d2fd9c;
-  border: none;
-  grid-column-start: 3;
-  margin-left: auto;
+
+  border-radius: 999px;
+  overflow: hidden;
+
+  /* 🔥 vidrio base */
+  background: rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* 🔥 borde tipo Apple */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* 🔥 sombra sutil */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 6px 18px rgba(0, 0, 0, 0.25);
+
+  color: white;
+
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 .header__button:hover {
-  filter: brightness(70%);
-  box-shadow: 0 6px 12px #000020;
-  transform: translateY(px);
-  cursor: pointer;
+  transform: translateY(-2px) scale(1.02);
+
+  background: rgba(255, 255, 255, 0.14);
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 10px 25px rgba(0, 0, 0, 0.4);
 }
+.header__button:hover::after {
+  animation: shine 0.8s ease;
+}
+.header__button:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  opacity: 0.2;
+}
+.header__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+}
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
 .header__headings {
   grid-row-start: 2;
   grid-row-end: 3;
