@@ -3,7 +3,7 @@
 }
 .content {
   display: grid;
-  grid-template-rows: 713px 810px 566px 550px 393px 500px 300px;
+  grid-template-rows: 713px 810px 566px 550px 393px 500px;
   row-gap: 50px;
   margin-top: 50px;
   margin-bottom: 50px;

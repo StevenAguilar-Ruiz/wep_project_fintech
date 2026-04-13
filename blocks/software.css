@@ -11,7 +11,7 @@
 .software-features__title {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 42px;
-  color: #394508;
+  color: white;
   grid-column: 1 / 5;
   grid-row: 1 / 2;
   margin: 0;
@@ -23,7 +23,7 @@
 .software-features__description {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: #5d5d5d;
+  color: rgb(255, 255, 255, 0.6);
   padding: 0;
   grid-column: 1 / 5;
   grid-row: 2 / 3;
@@ -70,7 +70,7 @@
 .software-features__text-one {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: black;
+  color: white;
   grid-row: 4 / 5;
   grid-column: 1 / 2;
   display: flex;
@@ -80,7 +80,7 @@
 .software-features__text-two {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: black;
+  color: white;
   grid-row: 4 / 5;
   grid-column: 2 / 3;
   display: flex;
@@ -90,7 +90,7 @@
 .software-features__text-tree {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: black;
+  color: white;
   grid-row: 4 / 5;
   grid-column: 3 / 4;
   display: flex;
@@ -100,7 +100,7 @@
 .software-features__text-four {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: black;
+  color: white;
   grid-row: 4 / 5;
   grid-column: 4 / 5;
   display: flex;

@@ -12,13 +12,13 @@
   justify-content: space-between;
 }
 .contact-footer__logo {
-  width: 49px;
-  height: 44px;
+  width: 15px;
+  height: 17px;
 }
 .contact-footer__title {
   font-family: "Inter-Black", Arial, Helvetica, sans-serif;
   font-size: 30px;
-  color: black;
+  color: white;
   margin: 0;
 }
 .contact-footer__nav {
@@ -28,7 +28,7 @@
 .contact-footer__label {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 15px;
-  color: #5d5d5d;
+  color: white;
 }
 .contact-footer__list {
   list-style-type: none;
@@ -47,7 +47,7 @@
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
   display: flex;
-  color: black;
+  color: rgb(255, 255, 255, 0.6);
   text-decoration: none;
   column-gap: 10px;
   align-items: center;
@@ -66,7 +66,7 @@
 .contact-footer__legal-link {
   font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: #5d5d5d;
+  color: rgb(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 1.2;
 }

@@ -75,10 +75,15 @@
 .nav__search-icon {
   width: 50%;
   height: 50%;
-  fill: rgba(60, 60, 67, 0.25); /* gris tipo Apple */
+  fill: white; /* gris tipo Apple */
   stroke: none; /* elimina bordes */
   transition: all 0.3s ease;
 }
+.nav__search-btn:hover .nav__search-icon {
+  fill: white;
+  transform: scale(1.1);
+}
+
 .nav__actions {
   position: relative;
   top: -50px;
@@ -114,6 +119,10 @@
     0 4px 10px rgba(0, 0, 0, 0.2);
 
   cursor: pointer;
+}
+.nav__home-btn:hover .nav__search-icon {
+  fill: white;
+  transform: scale(1.1);
 }
 .nav__home-btn:active {
   transform: scale(0.95);
