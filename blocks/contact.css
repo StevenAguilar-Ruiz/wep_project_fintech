@@ -35,7 +35,7 @@
   position: absolute;
   inset: 0;
 
-  /* 🔥 capa oscura suave */
+  /*  capa oscura suave */
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.5),
@@ -130,4 +130,31 @@
 .contact-footer__nav {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  .contact-footer {
+    height: 300px;
+  }
+  .contact-footer__grid {
+    margin-top: 10px;
+  }
+  .contact-footer__logo {
+    width: 40px;
+    height: 45px;
+  }
+  .contact-footer__label {
+    font-size: 12px;
+  }
+  .contact-footer__link {
+    font-size: 10px;
+  }
+  .contact-footer__items {
+    margin-top: 1px;
+  }
+  .contact-footer__icon {
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+  }
 }

@@ -49,4 +49,8 @@
     width: 79px;
     height: 20px;
   }
+  .features__logo-item_size {
+    width: 70px;
+    height: 15px;
+  }
 }

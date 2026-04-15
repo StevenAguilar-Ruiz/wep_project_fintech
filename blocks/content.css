@@ -18,7 +18,7 @@
   }
   .content {
     display: grid;
-    grid-template-rows: 664px 647px 490px 550px 303px 450px 300px;
+    grid-template-rows: 664px 647px 490px 550px 303px 550px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 40px;

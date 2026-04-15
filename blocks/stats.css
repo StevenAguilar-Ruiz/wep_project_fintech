@@ -101,7 +101,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    color: #394508;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@
     font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 1;
-    color: #5d5d5d;
+    color: rgb(255, 255, 255, 0.6);
     text-align: center;
     display: flex;
     justify-content: center;
