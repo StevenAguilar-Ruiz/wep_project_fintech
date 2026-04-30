@@ -132,6 +132,60 @@
   grid-row: 2 / 3;
 }
 
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .contact-footer {
+    width: 305px;
+    max-height: 1000px;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-footer__grid {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 100px repeat (2, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+    margin: 20px 10px 40px 10px;
+  }
+  .contact-footer__container-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+  }
+  .contact-footer__logo {
+    width: 35px;
+    height: 35px;
+  }
+  .contact-footer__nav-company {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .contact-footer__nav-product {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .contact-footer__nav-resources {
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+  }
+  .contact-footer__nav {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .contact-footer__label {
+    font-size: 13px;
+  }
+  .contact-footer__link {
+    font-size: 11px;
+  }
+  .contact-footer__icon {
+    width: 15px;
+    height: 15px;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 1279px) {
   .contact-footer {
     height: 300px;

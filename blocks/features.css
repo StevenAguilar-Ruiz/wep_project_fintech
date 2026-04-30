@@ -32,7 +32,26 @@
   width: 85px;
   height: 20px;
 }
-
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .features {
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: 200px 44px repeat(1, 1fr);
+    row-gap: 30px;
+    grid-row: 1 / 2;
+  }
+  .features__title {
+    font-size: 15px;
+  }
+  .features__logo-item {
+    width: 58px;
+    height: 15px;
+  }
+  .features__logo-item_size {
+    width: 53px;
+    height: 11.5px;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 1279px) {
   .features {
     display: grid;

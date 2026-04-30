@@ -122,6 +122,29 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .download-banner {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .download-banner__content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 165px repeat(1, 1fr) 60px;
+    padding-left: 20px;
+    row-gap: 14px;
+  }
+  .download-banner__title {
+    font-size: 20px;
+  }
+  .download-banner__button {
+    width: 85px;
+    height: 34px;
+    font-size: 11px;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 1279px) {
   .download-banner__title {
     font-size: 28px;

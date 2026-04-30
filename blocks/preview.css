@@ -16,6 +16,15 @@
   border-radius: 30px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .preview__container-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 1279px) {
   .preview {
     grid-row: 4 / 5;
